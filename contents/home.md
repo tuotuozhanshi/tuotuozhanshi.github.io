@@ -2,15 +2,16 @@
 
 [![senli1073](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073)
 
-He is currently pursuing a Master's Degree in Computer Science, at School of Computer Science and Technology, China University of Mining and Technology, China.
+I am currently pursuing a Doctor's degree in Mathematics, at School of Research Center for Mathematics and Interdisciplinary Sciences, Shandong University, China.
 
 #### Email
-sli[at]cumt.edu.cn
+202421349@mail.sdu.edu.cn
 
 #### Education
-M.E., Computer Science and Technology, China University of Mining and Technology, 2022—2025 (expected).\
-B.E., Data Science and Big Data Technology, China University of Mining and Technology, 2018—2022.
+2024-present, Ph.D. in Mathematics, Shandong University\
+2021-2024, Master in Mathematics, Shandong University\
+2017-2021, Bachelor in Mathematics with Honors, Southern University of Science and Technology.
 
 #### Research Interests
-Deep Learning, Artificial Intelligence Seismology, Mine Microseismic.
+Enumarative Combinatorics, Graph theory.
 
