@@ -10,7 +10,7 @@ I am currently pursuing a Doctor's degree in Mathematics, at School of Research 
 #### Education
 2024-present, Ph.D. in Mathematics, Shandong University\
 2021-2024, Master in Mathematics, Shandong University\
-2017-2021, Bachelor in Mathematics with Honors, Southern University of Science and Technology.
+2017-2021, Bachelor in Mathematics, Southern University of Science and Technology.
 
 #### Research Interests
 Enumarative Combinatorics, Graph theory.

@@ -1,9 +1,11 @@
-- First-prize Academic Scholarship, 2023.
+- Outstanding Graduate of Shandong University, 2024.
 
-- Freshman Academic Scholarship, 2022.
+- Outstanding Master's Thesis of Shandong University, 2024.
 
-- Excellent Graduation Project of Jiangsu Province, 2022.
+- National Scholarship of China, 2023.
 
-- First-prize Enterprise Scholarship, 2021.
+- Shandong University Merit Student, 2023-2024.
 
-- Freshman Academic Scholarship, 2019.
+- First-Class Master's Academic Scholarship of Shandong University, 2022.
+
+- Outstanding Student Source Scholarship of Shandong University, 2021.
