@@ -4,7 +4,9 @@
 
 - National Scholarship of China, 2023.
 
-- Shandong University Merit Student, 2023-2024.
+- Outstanding Intern in Software Development at Huawei, 2023.
+
+- Shandong University Merit Student, 2023 and 2024.
 
 - First-Class Master's Academic Scholarship of Shandong University, 2022.
 
