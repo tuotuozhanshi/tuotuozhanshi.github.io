@@ -1,0 +1,3 @@
+- **First-Class Academic Scholarship**, Shandong University, 2026, 2025, and 2022.
+- **Outstanding Graduate**, Shandong University, 2024.
+- **Chinese National Scholarship for Graduate Students**, 2023.
