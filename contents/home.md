@@ -1,17 +1,7 @@
+I am a Ph.D. student in Mathematics at the **Research Center for Mathematics and Interdisciplinary Sciences, Shandong University**, advised by **Zhicong Lin**.
 
+### Research Interests
 
-<!-- [![yangli](https://img.shields.io/badge/senli1073-github-blue?logo=github)](https://github.com/senli1073) -->
+My research interests include **generating functions, combinatorial statistics, combinatorial bijections, permutations, and lattice paths**, with a particular interest in **tree structures**.
 
-I am currently pursuing a Doctor's degree in Mathematics, at School of Research Center for Mathematics and Interdisciplinary Sciences, Shandong University, China.
-
-#### Email
-202421349@mail.sdu.edu.cn
-
-#### Education
-2024-present, Ph.D. in Mathematics, Shandong University\
-2021-2024, Master in Mathematics, Shandong University\
-2017-2021, Bachelor in Mathematics, Southern University of Science and Technology.
-
-#### Research Interests
-Enumarative Combinatorics, Graph theory.
-
+<p class="contact-links"><a href="mailto:202421349@mail.sdu.edu.cn">202421349@mail.sdu.edu.cn</a><span class="contact-divider" aria-hidden="true">&middot;</span><a class="cv-link" href="static/assets/docs/Yang_Li_CV.pdf" target="_blank" rel="noopener">Curriculum vitae [pdf]</a></p>

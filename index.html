@@ -1,177 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="yangli" />
-    <title id="title"></title>
-
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yang Li, Ph.D. student in Mathematics at Shandong University. Research in combinatorics, bijections, generating functions, lattice paths, and tree structures.">
+  <meta name="author" content="Yang Li">
+  <meta name="theme-color" content="#3948d2">
+  <title id="title">Yang Li | Combinatorics | Shandong University</title>
+  <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link rel="stylesheet" href="static/css/main.css">
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']]},
+      startup: {typeset: false},
+      svg: {fontCache: 'global'}
+    };
+  </script>
+  <script defer src="static/js/bootstrap.bundle.min.js"></script>
+  <script defer src="static/js/marked.min.js"></script>
+  <script defer src="static/js/js-yaml.min.js"></script>
+  <script defer src="static/js/tex-svg.js"></script>
+  <script defer src="static/js/scripts.js"></script>
 </head>
-
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
-            </div>
-        </div>
-    </section>
-    <!-- Top Section -->
-
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
-        </div>
+  <a class="skip-link" href="#home">Skip to main content</a>
+  <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav" aria-label="Main navigation">
+    <div class="container site-container">
+      <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top">Yang Li</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <span aria-hidden="true">☰</span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-3 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" href="static/assets/docs/Yang_Li_CV.pdf" target="_blank" rel="noopener">CV [pdf]</a></li>
+        </ul>
+      </div>
     </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
+  </nav>
+  <header class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
+    <div class="top-section-content container site-container">
+      <h1 id="top-section-bg-text">Yang Li’s Homepage</h1>
+      <p class="hero-subtitle">Combinatorics · Shandong University</p>
+    </div>
+  </header>
+  <div class="container site-container avatar-container">
+    <div id="avatar"><img src="static/assets/img/photo.png" alt="Portrait of Yang Li" width="480" height="640"></div>
+  </div>
+  <main>
+    <section class="content-section bg-gradient-primary-to-secondary-light" id="home" aria-labelledby="home-subtitle">
+      <div class="container site-container">
+        <header><h2 id="home-subtitle">Yang Li <span lang="zh">李杨</span></h2></header>
+        <div class="main-body" id="home-md"><p>I am a Ph.D. student in Mathematics at the <strong>Research Center for Mathematics and Interdisciplinary Sciences, Shandong University</strong>, advised by <strong>Zhicong Lin</strong>.</p>
+<h3>Research Interests</h3>
+<p>My research interests include <strong>generating functions, combinatorial statistics, combinatorial bijections, permutations, and lattice paths</strong>, with a particular interest in <strong>tree structures</strong>.</p>
+<p class="contact-links"><a href="mailto:202421349@mail.sdu.edu.cn">202421349@mail.sdu.edu.cn</a><span class="contact-divider" aria-hidden="true">&middot;</span><a class="cv-link" href="static/assets/docs/Yang_Li_CV.pdf" target="_blank" rel="noopener">Curriculum vitae [pdf]</a></p>
+</div>
+      </div>
     </section>
-    <!-- Home -->
-
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
+    <section class="content-section bg-gradient-primary-to-secondary-gray" id="publications" aria-labelledby="publications-subtitle">
+      <div class="container site-container">
+        <header><h2 id="publications-subtitle">Publications and Preprints</h2></header>
+        <div class="main-body" id="publications-md"><h3>Preprints and Manuscripts</h3>
+<ol>
+<li><p>W. Fang, <strong>Y. Li</strong>, and Z. Lin, <a href="https://arxiv.org/abs/2610.05665">Symmetries on vector parking functions via bounded lattice paths</a>, preprint, arXiv:2610.05665 (2026). <a class="pdf-link" href="papers/symmetries-vector-parking-functions.pdf" target="_blank" rel="noopener" aria-label="Open PDF: Symmetries on vector parking functions via bounded lattice paths" title="arXiv preprint supplied by the author">[pdf]</a></p>
+</li>
+<li><p>S. Fu, <strong>Y. Li</strong>, Z. Lin, and Y. Zang, Involutive proofs of various combinatorial identities for Euler numbers, manuscript under review. <a class="pdf-link" href="papers/euler-number-identities.pdf" target="_blank" rel="noopener" aria-label="Open PDF: Involutive proofs of various combinatorial identities for Euler numbers" title="Manuscript supplied by the author">[pdf]</a></p>
+</li>
+</ol>
+<h3>Published and Accepted Papers</h3>
+<ol start="3">
+<li><p><strong>Y. Li</strong>, S. Kitaev, Z. Lin, and J. Liu, <a href="https://arxiv.org/abs/2507.09187">A bijection between 321- and 213-avoiding permutations preserving <em>t</em>-stack-sortability</a>, <em>Annals of Combinatorics</em>, accepted for publication (arXiv:2507.09187). <a class="pdf-link" href="https://arxiv.org/pdf/2507.09187" target="_blank" rel="noopener" aria-label="Open PDF: A bijection between 321- and 213-avoiding permutations preserving t-stack-sortability" title="Opens the public arXiv PDF">[pdf]</a></p>
+</li>
+<li><p><strong>Y. Li</strong> and Z. Lin, <a href="https://www.sciencedirect.com/science/article/pii/S0012365X25002407">Bijections in weakly increasing trees via binary trees</a>, <em>Discrete Mathematics</em>, <strong>348</strong> (2025), Article 114632. <a class="pdf-link" href="papers/weakly-increasing-trees.pdf" target="_blank" rel="noopener" aria-label="Open PDF: Bijections in weakly increasing trees via binary trees" title="Journal PDF supplied by the author">[pdf]</a></p>
+</li>
+<li><p>S. Chen, <strong>Y. Li</strong>, Z. Lin, and S. H. F. Yan, <a href="https://www.sciencedirect.com/science/article/pii/S0012365X25001785">Bijections around Springer numbers</a>, <em>Discrete Mathematics</em>, <strong>348</strong> (2025), Article 114570. <a class="pdf-link" href="papers/springer-numbers.pdf" target="_blank" rel="noopener" aria-label="Open PDF: Bijections around Springer numbers" title="Journal PDF supplied by the author">[pdf]</a></p>
+</li>
+<li><p><strong>Y. Li</strong>, Z. Lin, and T. Zhao, <a href="https://www.sciencedirect.com/science/article/pii/S0196885824000083">Two involutions on binary trees and generalizations</a>, <em>Advances in Applied Mathematics</em>, <strong>156</strong> (2024), Article 102677. <a class="pdf-link" href="papers/binary-tree-involutions.pdf" target="_blank" rel="noopener" aria-label="Open PDF: Two involutions on binary trees and generalizations" title="Journal PDF supplied by the author">[pdf]</a></p>
+</li>
+<li><p><strong>Y. Li</strong> and Z. Lin, <a href="https://www.sciencedirect.com/science/article/pii/S0012365X23001127">A symmetry on parking functions via Dyck paths</a>, <em>Discrete Mathematics</em>, <strong>346</strong> (2023), Article 113426. <a class="pdf-link" href="papers/parking-functions-dyck-paths.pdf" target="_blank" rel="noopener" aria-label="Open PDF: A symmetry on parking functions via Dyck paths" title="Journal PDF supplied by the author">[pdf]</a></p>
+</li>
+</ol>
+</div>
+      </div>
     </section>
-    <!-- Publications  -->
-
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
-
-        </div>
+    <section class="content-section bg-gradient-primary-to-secondary-light" id="background" aria-labelledby="background-subtitle">
+      <div class="container site-container">
+        <header><h2 id="background-subtitle">Academic Background</h2></header>
+        <div class="main-body" id="background-md"><h3>Education</h3>
+<ul>
+<li><p><strong>Shandong University</strong>, Qingdao, Shandong<br>Ph.D. student in Mathematics, <strong>September 2024–present</strong><br>Advisor: <strong>Zhicong Lin</strong></p>
+</li>
+<li><p><strong>Shandong University</strong>, Qingdao, Shandong<br>Master&#39;s degree in Mathematics, <strong>September 2021–June 2024</strong><br>Advisor: <strong>Zhicong Lin</strong></p>
+</li>
+<li><p><strong>Southern University of Science and Technology</strong>, Shenzhen, Guangdong<br>Bachelor&#39;s degree in Financial Mathematics, <strong>September 2017–June 2021</strong></p>
+</li>
+</ul>
+<h3>Graduate Courses</h3>
+<p>Enumerative Combinatorics, Symmetric Functions, Representation Theory, Hyperplane Arrangements, Algebraic Topology.</p>
+<h3>Conferences Attended</h3>
+<ul>
+<li>The 11th Conference on Combinatorics and Graph Theory, Qingdao, September 19–22, 2024.</li>
+<li>The 7th Conference on Combinatorial Mathematics and Symbolic Computation, Shijiazhuang, October 18–20, 2024.</li>
+<li>The 20th Annual Conference of the China Society for Industrial and Applied Mathematics, online, October 23–26, 2022 (<strong>gave a talk</strong>).</li>
+</ul>
+<h3>Skills and Languages</h3>
+<p><strong>Software:</strong> Java, Python, Maple, SQL, LaTeX.<br><strong>Languages:</strong> Chinese, English.</p>
+</div>
+      </div>
     </section>
-    <!-- Awards -->
-
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/tuotuozhanshi">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/tuotuozhanshi/tuotuozhanshi.github.io/blob/main/LICENSE">License</a>
-            </div>
-        </div>
-    </footer>
-
+    <section class="content-section bg-gradient-primary-to-secondary-gray" id="awards" aria-labelledby="awards-subtitle">
+      <div class="container site-container">
+        <header><h2 id="awards-subtitle">Honors and Awards</h2></header>
+        <div class="main-body" id="awards-md"><ul>
+<li><strong>First-Class Academic Scholarship</strong>, Shandong University, 2026, 2025, and 2022.</li>
+<li><strong>Outstanding Graduate</strong>, Shandong University, 2024.</li>
+<li><strong>Chinese National Scholarship for Graduate Students</strong>, 2023.</li>
+</ul>
+</div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-bottom text-center">
+    <div class="container site-container">
+      <p id="copyright-text">© Yang Li 2026.</p>
+      <p class="footer-links"><a href="https://github.com/tuotuozhanshi" target="_blank" rel="noopener">GitHub</a><span aria-hidden="true"> · </span><a href="LICENSE">Template license</a></p>
+    </div>
+  </footer>
 </body>
-
 </html>
