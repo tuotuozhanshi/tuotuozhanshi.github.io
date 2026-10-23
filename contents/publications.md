@@ -1,8 +1,8 @@
-### Preprints and Manuscripts
+### Preprints
 
 1. W. Fang, **Y. Li**, and Z. Lin, [Symmetries on vector parking functions via bounded lattice paths](https://arxiv.org/abs/2610.05665), preprint, arXiv:2610.05665 (2026). <a class="pdf-link" href="papers/symmetries-vector-parking-functions.pdf" target="_blank" rel="noopener" aria-label="Open PDF: Symmetries on vector parking functions via bounded lattice paths" title="arXiv preprint supplied by the author">[pdf]</a>
 
-2. S. Fu, **Y. Li**, Z. Lin, and Y. Zang, Involutive proofs of various combinatorial identities for Euler numbers, manuscript under review. <a class="pdf-link" href="papers/euler-number-identities.pdf" target="_blank" rel="noopener" aria-label="Open PDF: Involutive proofs of various combinatorial identities for Euler numbers" title="Manuscript supplied by the author">[pdf]</a>
+2. S. Fu, **Y. Li**, Z. Lin, and Y. Zang, Involutive proofs of various combinatorial identities for Euler numbers, preprint. <a class="pdf-link" href="papers/euler-number-identities.pdf" target="_blank" rel="noopener" aria-label="Open PDF: Involutive proofs of various combinatorial identities for Euler numbers" title="Preprint supplied by the author">[pdf]</a>
 
 ### Published and Accepted Papers
 

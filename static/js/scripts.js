@@ -5,6 +5,7 @@
   if (!site || !site.languages) return;
   const sectionNames = ['home', 'publications', 'background', 'internship', 'awards'];
   const storageKey = 'yang-li-site-language';
+  const buildVersion = 'compact-sdu-r6';
   let currentLanguage = 'en';
   let requestVersion = 0;
   let mathQueue = Promise.resolve();
@@ -21,7 +22,7 @@
   }
 
   async function readText(path) {
-    const response = await fetch(path, {cache: 'no-cache'});
+    const response = await fetch(`${path}${path.includes('?') ? '&' : '?'}v=${buildVersion}`, {cache: 'no-cache'});
     if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
     return response.text();
   }
@@ -143,8 +144,6 @@
     const version = ++requestVersion;
     currentLanguage = language;
     document.documentElement.dataset.ready = 'loading';
-    const dialog = document.getElementById('image-lightbox');
-    if (dialog?.open) dialog.close();
     render(language, updateUrl);
     try { window.localStorage.setItem(storageKey, language); } catch (_) {}
     if (updateUrl) {
@@ -157,34 +156,6 @@
     // Rendering is already complete; remote refresh only applies repository edits.
     document.documentElement.dataset.ready = 'true';
     refreshFromFiles(language, version);
-  }
-
-  function bindGallery() {
-    const dialog = document.getElementById('image-lightbox');
-    const image = document.getElementById('lightbox-image');
-    const caption = document.getElementById('lightbox-caption');
-    const original = document.getElementById('lightbox-original');
-    if (!dialog) return;
-    document.addEventListener('click', event => {
-      const link = event.target.closest('a[data-lightbox]');
-      if (!link || typeof dialog.showModal !== 'function' || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-      event.preventDefault();
-      image.src = link.href;
-      image.alt = link.querySelector('img')?.alt || '';
-      caption.textContent = link.dataset.caption || '';
-      original.href = link.href;
-      dialog.showModal();
-      document.body.classList.add('lightbox-open');
-    });
-    dialog.querySelector('.lightbox-close').addEventListener('click', () => dialog.close());
-    dialog.addEventListener('click', event => {
-      const box = dialog.getBoundingClientRect();
-      if (event.target === dialog && (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom)) dialog.close();
-    });
-    dialog.addEventListener('close', () => {
-      document.body.classList.remove('lightbox-open');
-      image.removeAttribute('src');
-    });
   }
 
   window.addEventListener('DOMContentLoaded', () => {
@@ -200,7 +171,6 @@
         }
       });
     });
-    bindGallery();
     setLanguage(initialLanguage(), false);
     if (window.location.hash) {
       requestAnimationFrame(() => {

@@ -1,84 +1,58 @@
 # Yang Li / 李杨 — bilingual academic homepage
 
-本包基于你上传的最新仓库修改：保留既有学术资料、七篇论文、期刊版 PDF、CV、主页头像与背景；新增华为实习栏目、山东大学校徽 favicon 和中英文切换。
+## 本次版本：compact-sdu-r6
 
-## 上传到 GitHub（不需要清空仓库）
+- 预印本小标题为 **Preprints / 预印本**，两篇条目均写 **preprint**，不再显示 manuscript under review。
+- 中英文版的论文条目使用一致的英文信息，包括 preprint、accepted for publication、Article；作者、题名、期刊、卷号、年份和文章号均保留。
+- 实习经历保留一个简洁条目，公司、日期和岗位分层排列，窄屏自然换行，后面只显示两个相邻的蓝色 **[pdf][pdf]** 链接，不加可见的说明或分隔符；第一个打开实习证明，第二个打开园区照片。页面不加载或展开图片。
+- 两个实习链接均指向真实 PDF。证明中的两处证件号已在像素层面遮挡，未经脱敏的原图不在本包中。
+- 浏览器图标使用山东大学校徽。使用新的 `sdu-favicon-*-r4` 文件名，同时替换根目录 `favicon.ico`、旧路径图标及 Apple touch icon。
+- 仍有七篇论文；原有论文 PDF、CV、头像、背景、学术经历与中英文切换保留。
 
-1. 解压后进入 **能看到 `index.html` 的那一层**。
-2. 打开现有个人主页仓库的根目录，选择 **Add file → Upload files**。
-3. 将这一层的文件和文件夹上传到根目录，覆盖同路径文件。不要直接上传 ZIP，也不要把外层文件夹再套进去。
-4. 提交 **Commit changes**。这只更新仓库文件；网页仍需完成原有的发布流程。
-5. 使用原来的个人主页网址。不要为这次更新删除仓库或更改仓库名称。
+## 上传到 GitHub
 
-主要文件/文件夹：`index.html`、`contents/`、`static/`、`papers/`、`favicon.ico`、`README.md`、`LICENSE`、`tools/`。`.nojekyll` 是静态站点标记。包内已去除 `.idea`、`__MACOSX` 和旧模板截图，不影响主页。
+1. 解压后打开 `tuotuozhanshi.github.io` 文件夹，进入能看到 `index.html` 的这一层。
+2. 打开原仓库的根目录，选择 **Add file → Upload files**。
+3. 上传这一层里的文件和文件夹并提交。不要上传 ZIP，也不要多套一层外部文件夹，不必先删除原仓库。
+4. 特别确认 `index.html`、`contents/`、`static/` 和根目录 `favicon.ico` 均更新。只换正文不会同步修复图标。
+5. 发布完成后重新打开个人主页。本包只修改文件，不会自动替你更新 GitHub 上的内容。
+
+若仍显示旧图标，先确认最新 HTML 引用的是 `static/assets/sdu-favicon-r4.ico` 等新文件，且这些文件已上传成功。旧标签页或浏览器存储可能仍保留旧显示；关闭原标签页后重新打开，或使用新隐私窗口核对。无需先清除整个浏览器历史或删除所有网站数据。
 
 ## 本地预览
 
-直接打开 `index.html` 可查看页面并切换语言，无需先发布。图片和本地 PDF 使用相对路径，所以请完整解压并保留目录结构。
-
-也可以在本目录运行 `python3 -m http.server 8000`，在浏览器打开 `http://localhost:8000/`。不需要安装网页框架或运行 npm。
-
-## 中英文切换
-
-- 默认英文；右上角 **EN / 中文** 切换导航、介绍、学术背景、实习、荣誉及其他界面文字。
-- 电脑和手机均显示语言按钮。
-- 浏览器允许本地存储时，会记住上次选择；隐私模式阻止存储时，按钮仍然正常工作。
-- `?lang=zh` 和 `?lang=en` 可以指定链接语言，优先于已保存的选择。
-- 论文题名、作者署名和期刊名保留英文原文。论文 PDF 及 CV 不会随语言切换而翻译；CV 仍为现有英文版本。
-
-## 实习栏目
-
-- 单位：华为技术有限公司 / Huawei Technologies Co., Ltd.
-- 岗位：软件研发工程师（实习） / Software R&D Engineer (Internship)
-- 时间：2023-06-28 至 2023-08-25，按所提供实习证明填写。
-- 所提供的实习证明与园区夜景均已插入；点击可放大，按 Escape 或点击关闭按钮退出。
-- 未添加未提供的具体工作职责、项目、技术栈或实习奖励。
-
-### 实习证明隐私处理
-
-**公开包只含脱敏后的图片。**证明中的中英文两处身份证/护照号码已用不透明色块直接覆盖到图像像素，不是 CSS 遮罩；未经遮挡的原图不在包中。姓名、实习日期、单位名称、证明文字及印章保留。请不要额外将未经遮挡的原图上传到公开仓库。
-
-公开图：`static/assets/img/huawei-internship-certificate-redacted.png`。
-园区照片：`static/assets/img/huawei-campus.jpg`（去除图片元数据后重新保存）。
-
-## 网站小图标
-
-使用提供的山东大学校徽，不再使用个人头像。包含多尺寸 `favicon.ico`、32/192 像素 PNG 及 Apple touch icon；校徽以浅色圆底适配深色标签页。HTML 中带有版本参数。主页大头像保持不变。
-
-## 后续内容修改
-
-| 内容 | 英文文件 | 中文文件 |
-| --- | --- | --- |
-| 页面标题、导航、界面文字 | `contents/config.yml` | `contents/zh/config.yml` |
-| 简介与研究兴趣 | `contents/home.md` | `contents/zh/home.md` |
-| 论文 | `contents/publications.md` | `contents/zh/publications.md` |
-| 教育、课程、会议、技能 | `contents/background.md` | `contents/zh/background.md` |
-| 实习 | `contents/internship.md` | `contents/zh/internship.md` |
-| 荣誉 | `contents/awards.md` | `contents/zh/awards.md` |
-
-已发布的网站会读取 Markdown 和 YAML 文件。请同时维护中英文两份内容。
-
-为了让双击本地 `index.html` 的预览也同步显示后续修改，可在本目录运行：
+完整解压后双击 `index.html` 即可预览并切换语言。也可以在项目目录运行：
 
 ```sh
-node tools/build-content.cjs
+python3 -m http.server 8000
 ```
 
-这一步仅需要 Node.js，不需要安装额外依赖。它会更新 `static/js/site-content.js` 和 `index.html` 中的备用正文。普通 GitHub 在线 Markdown 更新不依赖此步骤；它主要用于同步离线预览副本。
+再访问 `http://localhost:8000/`。
 
-## 论文与简历
+## 维护内容
 
-- 七篇论文的顺序、署名、题名与原状态保持不变。
-- 四篇已发表文章继续使用原上传的期刊 PDF。
-- 向量停车函数预印本和欧拉数在审稿件使用原上传文件。
-- 已录用的 stack-sortability 论文的 `[pdf]` 继续指向公开的 arXiv PDF，需要网络，不在本地 `papers/` 中。
-- 所有 `[pdf]` 链接均保持蓝色，在新标签页打开。
-- CV 位于 `static/assets/docs/Yang_Li_CV.pdf`，未增改 CV 本身。
+| 内容 | 英文 | 中文 |
+| --- | --- | --- |
+| 导航与页面标题 | contents/config.yml | contents/zh/config.yml |
+| 个人介绍 | contents/home.md | contents/zh/home.md |
+| 论文 | contents/publications.md | contents/zh/publications.md |
+| 学术背景 | contents/background.md | contents/zh/background.md |
+| 实习 | contents/internship.md | contents/zh/internship.md |
+| 荣誉 | contents/awards.md | contents/zh/awards.md |
 
-## English maintenance notes
+在线网页读取上述文件。修改后可运行 `node tools/build-content.cjs`，同步离线预览正文和 `static/js/site-content.js`。不需要 npm install。
 
-This is a static, bilingual academic homepage, with no server-side dependency. The original academic content and PDF files are retained. English content is in `contents/`; Chinese content is in `contents/zh/`. The main script falls back to locally embedded content if content requests are unavailable. The language choice is stored locally when browser storage is available.
+## 实习文件与隐私
 
-The new internship entry contains only the employer, role, and dates supplied by the owner, with an irreversibly redacted certificate image and the supplied campus photograph. No unredacted certificate is included in this public package.
+- `static/assets/docs/huawei-internship-certificate.pdf`：已脱敏证明。
+- `static/assets/docs/huawei-campus-photo.pdf`：园区照片 PDF。
+- `static/assets/img/huawei-internship-certificate-redacted.png`：已脱敏图片，仅作源素材，不内嵌到主页。
+- `static/assets/img/huawei-campus.jpg`：园区照片源素材，不内嵌到主页。
 
-Original template attribution and license are retained in `LICENSE`; dependencies retain their existing license notices.
+PDF 由上述公开素材直接转换，保留原图比例，不添加工作职责或项目描述。不要把未经遮挡的证件号码原图另外上传至公开仓库。
+
+## 论文与 CV
+
+四篇已发表论文继续使用用户提供的期刊版文件；两篇预印本使用提供的稿件。已录用的 stack-sortability 论文继续外链 arXiv PDF，因此这一条打开时需要网络。CV 位于 `static/assets/docs/Yang_Li_CV.pdf`，本轮没有修改 CV 或论文 PDF 本身。
+
+原模板许可证及署名保留在 `LICENSE`。
