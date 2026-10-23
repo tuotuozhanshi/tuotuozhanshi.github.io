@@ -1,8 +1,28 @@
-title: "Yang Li | Combinatorics | Shandong University"
-page-top-title: "Yang Li"
-top-section-bg-text: "Yang Li’s Homepage"
-home-subtitle: "Yang Li | 李杨"
-publications-subtitle: "Publications and Preprints"
-background-subtitle: "Academic Background"
-awards-subtitle: "Honors and Awards"
-copyright-text: "© Yang Li 2026."
+title: Yang Li | Combinatorics | Shandong University
+description: Yang Li, Ph.D. student in Mathematics at Shandong University. Research
+  in combinatorics, bijections, generating functions, lattice paths, and tree structures.
+page-top-title: Yang Li
+top-section-bg-text: Yang Li’s Homepage
+hero-subtitle: Combinatorics · Shandong University
+home-subtitle: Yang Li | 李杨
+publications-subtitle: Publications and Preprints
+background-subtitle: Academic Background
+internship-subtitle: Internship Experience
+awards-subtitle: Honors and Awards
+copyright-text: © Yang Li 2026.
+nav-home: Home
+nav-publications: Publications
+nav-background: Background
+nav-internship: Internship
+nav-awards: Awards
+nav-cv: CV [pdf]
+menu-label: Menu
+skip-label: Skip to main content
+license-label: Template license
+navigation-label: Main navigation
+menu-toggle-label: Toggle navigation
+language-label: Select language
+avatar-alt: Portrait of Yang Li
+image-preview-label: Image preview
+close-label: Close
+open-image-label: Open full image

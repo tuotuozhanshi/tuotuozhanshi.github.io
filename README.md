@@ -1,66 +1,84 @@
-# Yang Li — Academic Homepage
+# Yang Li / 李杨 — bilingual academic homepage
 
-这是按最终版 `Yang_Li_CV.pdf` 更新的个人主页项目，保留原主页的背景图片、照片和蓝色配色。
+本包基于你上传的最新仓库修改：保留既有学术资料、七篇论文、期刊版 PDF、CV、主页头像与背景；新增华为实习栏目、山东大学校徽 favicon 和中英文切换。
 
-## 本次更新
+## 上传到 GitHub（不需要清空仓库）
 
-- 按 CV 更新博士身份、导师、教育经历、研究兴趣、课程、会议、荣誉及软件技能。
-- 收录 CV 中六篇论文，再加上作者提供的欧拉数论文，共七篇。
-- 每篇条目末尾都有蓝色 `[pdf]`，在新标签页打开论文，不是 GitHub 文件预览页。
-- 四篇已发表论文使用作者上传的期刊 PDF，文件内容未修改。
-- 欧拉数论文按作者提供的信息标为 `manuscript under review`，不显示投稿期刊名称。
-- Annals of Combinatorics 论文保留 `accepted for publication`，其 `[pdf]` 直达 arXiv PDF。
-- 添加当前 CV 链接；没有添加 CSC 资助、LLM 技能或未提供的经历。
-- 移除重复的 MathJax 加载和旧兼容脚本，保留本地 Markdown、YAML、Bootstrap 和数学渲染依赖。
+1. 解压后进入 **能看到 `index.html` 的那一层**。
+2. 打开现有个人主页仓库的根目录，选择 **Add file → Upload files**。
+3. 将这一层的文件和文件夹上传到根目录，覆盖同路径文件。不要直接上传 ZIP，也不要把外层文件夹再套进去。
+4. 提交 **Commit changes**。这只更新仓库文件；网页仍需完成原有的发布流程。
+5. 使用原来的个人主页网址。不要为这次更新删除仓库或更改仓库名称。
 
-## 上传 GitHub
+主要文件/文件夹：`index.html`、`contents/`、`static/`、`papers/`、`favicon.ico`、`README.md`、`LICENSE`、`tools/`。`.nojekyll` 是静态站点标记。包内已去除 `.idea`、`__MACOSX` 和旧模板截图，不影响主页。
 
-1. 解压整个 ZIP，进入 `tuotuozhanshi.github.io` 文件夹。
-2. 把**该文件夹里面**的 `index.html`、`contents`、`static`、`papers`、`README.md` 等上传到原仓库的根目录，并覆盖同路径文件。
-3. 不要把 ZIP 本身当作网页上传，也不要把 `tuotuozhanshi.github.io` 整个目录嵌套到仓库的下一层。
-4. 提交修改后，按原有 GitHub Pages 设置部署。这个项目不需要运行构建命令。
-5. 网站地址不变。若浏览器仍显示旧内容，强制刷新并确认 Pages 的部署完成。
+## 本地预览
 
-若用 Git 操作，请先保留自己的原仓库备份，再覆盖内容、检查 `git diff` 后提交。这里没有代你推送或发布线上网站。
+直接打开 `index.html` 可查看页面并切换语言，无需先发布。图片和本地 PDF 使用相对路径，所以请完整解压并保留目录结构。
 
-## 文件结构与今后修改
+也可以在本目录运行 `python3 -m http.server 8000`，在浏览器打开 `http://localhost:8000/`。不需要安装网页框架或运行 npm。
 
-- `contents/home.md`：简介、研究兴趣、邮箱和 CV 链接。
-- `contents/publications.md`：七篇论文及其 PDF 链接。
-- `contents/background.md`：教育、课程、会议、技能及语言。
-- `contents/awards.md`：CV 中的荣誉。
-- `contents/config.yml`：页面标题、各栏目标题及页脚。
-- `papers/`：六篇已随包提供的论文 PDF。
-- `static/assets/docs/Yang_Li_CV.pdf`：当前一页 CV，仍保留原来的六篇论文。
-- `static/css/main.css`：自定义样式，`.pdf-link` 控制蓝色 `[pdf]`。
-- `index.html`：页面框架及本地预览备用内容。
+## 中英文切换
 
-线上页面会读取 `contents/*.md`，今后主要编辑这些文件即可。直接双击 `index.html` 可以查看本次打包时的完整页面；修改 Markdown 后要查看最新内容，请在项目文件夹运行：
+- 默认英文；右上角 **EN / 中文** 切换导航、介绍、学术背景、实习、荣誉及其他界面文字。
+- 电脑和手机均显示语言按钮。
+- 浏览器允许本地存储时，会记住上次选择；隐私模式阻止存储时，按钮仍然正常工作。
+- `?lang=zh` 和 `?lang=en` 可以指定链接语言，优先于已保存的选择。
+- 论文题名、作者署名和期刊名保留英文原文。论文 PDF 及 CV 不会随语言切换而翻译；CV 仍为现有英文版本。
+
+## 实习栏目
+
+- 单位：华为技术有限公司 / Huawei Technologies Co., Ltd.
+- 岗位：软件研发工程师（实习） / Software R&D Engineer (Internship)
+- 时间：2023-06-28 至 2023-08-25，按所提供实习证明填写。
+- 所提供的实习证明与园区夜景均已插入；点击可放大，按 Escape 或点击关闭按钮退出。
+- 未添加未提供的具体工作职责、项目、技术栈或实习奖励。
+
+### 实习证明隐私处理
+
+**公开包只含脱敏后的图片。**证明中的中英文两处身份证/护照号码已用不透明色块直接覆盖到图像像素，不是 CSS 遮罩；未经遮挡的原图不在包中。姓名、实习日期、单位名称、证明文字及印章保留。请不要额外将未经遮挡的原图上传到公开仓库。
+
+公开图：`static/assets/img/huawei-internship-certificate-redacted.png`。
+园区照片：`static/assets/img/huawei-campus.jpg`（去除图片元数据后重新保存）。
+
+## 网站小图标
+
+使用提供的山东大学校徽，不再使用个人头像。包含多尺寸 `favicon.ico`、32/192 像素 PNG 及 Apple touch icon；校徽以浅色圆底适配深色标签页。HTML 中带有版本参数。主页大头像保持不变。
+
+## 后续内容修改
+
+| 内容 | 英文文件 | 中文文件 |
+| --- | --- | --- |
+| 页面标题、导航、界面文字 | `contents/config.yml` | `contents/zh/config.yml` |
+| 简介与研究兴趣 | `contents/home.md` | `contents/zh/home.md` |
+| 论文 | `contents/publications.md` | `contents/zh/publications.md` |
+| 教育、课程、会议、技能 | `contents/background.md` | `contents/zh/background.md` |
+| 实习 | `contents/internship.md` | `contents/zh/internship.md` |
+| 荣誉 | `contents/awards.md` | `contents/zh/awards.md` |
+
+已发布的网站会读取 Markdown 和 YAML 文件。请同时维护中英文两份内容。
+
+为了让双击本地 `index.html` 的预览也同步显示后续修改，可在本目录运行：
 
 ```sh
-python3 -m http.server 8000
+node tools/build-content.cjs
 ```
 
-然后打开 `http://localhost:8000`。
+这一步仅需要 Node.js，不需要安装额外依赖。它会更新 `static/js/site-content.js` 和 `index.html` 中的备用正文。普通 GitHub 在线 Markdown 更新不依赖此步骤；它主要用于同步离线预览副本。
 
-## PDF 来源及版本
+## 论文与简历
 
-| 论文 | 本项目使用的 PDF |
-| --- | --- |
-| Symmetries on vector parking functions via bounded lattice paths | 作者上传的 arXiv:2610.05665v1 |
-| Involutive proofs of various combinatorial identities for Euler numbers | 作者上传的 Eul-Iden-0125.pdf（44 页） |
-| A bijection between 321- and 213-avoiding permutations preserving t-stack-sortability | https://arxiv.org/pdf/2507.09187（外部直链，未在包内伪造本地文件） |
-| Bijections in weakly increasing trees via binary trees | 作者上传的 Discrete Mathematics 348 (2025), 114632 |
-| Bijections around Springer numbers | 作者上传的 Discrete Mathematics 348 (2025), 114570 |
-| Two involutions on binary trees and generalizations | 作者上传的 Advances in Applied Mathematics 156 (2024), 102677 |
-| A symmetry on parking functions via Dyck paths | 作者上传的 Discrete Mathematics 346 (2023), 113426 |
+- 七篇论文的顺序、署名、题名与原状态保持不变。
+- 四篇已发表文章继续使用原上传的期刊 PDF。
+- 向量停车函数预印本和欧拉数在审稿件使用原上传文件。
+- 已录用的 stack-sortability 论文的 `[pdf]` 继续指向公开的 arXiv PDF，需要网络，不在本地 `papers/` 中。
+- 所有 `[pdf]` 链接均保持蓝色，在新标签页打开。
+- CV 位于 `static/assets/docs/Yang_Li_CV.pdf`，未增改 CV 本身。
 
-Annals 稿件的公开状态核对：
-https://pureportal.strath.ac.uk/en/publications/a-bijection-between-321-and-213-avoiding-permutations-preserving-/
+## English maintenance notes
 
-项目中的 CV 包含作者提供的联系方式等个人信息。正式公开网站前，请自行确认公开范围、合作者对未发表稿件公开的意见，以及期刊 PDF 的分享许可。本次没有修改任何论文或 CV 内容。
+This is a static, bilingual academic homepage, with no server-side dependency. The original academic content and PDF files are retained. English content is in `contents/`; Chinese content is in `contents/zh/`. The main script falls back to locally embedded content if content requests are unavailable. The language choice is stored locally when browser storage is available.
 
-## 模板许可
+The new internship entry contains only the employer, role, and dates supplied by the owner, with an irreversibly redacted certificate image and the supplied campus photograph. No unredacted certificate is included in this public package.
 
-原模板基于 Sen Li 的 academic-homepage-template 和 Start Bootstrap。
-保留原 `LICENSE`；模板许可不覆盖各篇论文的版权。
+Original template attribution and license are retained in `LICENSE`; dependencies retain their existing license notices.

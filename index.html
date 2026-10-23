@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-language="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,9 +7,12 @@
   <meta name="author" content="Yang Li">
   <meta name="theme-color" content="#3948d2">
   <title id="title">Yang Li | Combinatorics | Shandong University</title>
-  <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico?v=sdu-20261023">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/assets/favicon-32.png?v=sdu-20261023">
+  <link rel="icon" type="image/png" sizes="192x192" href="static/assets/favicon-192.png?v=sdu-20261023">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/assets/apple-touch-icon.png?v=sdu-20261023">
   <link rel="stylesheet" href="static/css/styles.css">
-  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" href="static/css/main.css?v=bilingual-20261023">
   <script>
     window.MathJax = {
       tex: {inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']]},
@@ -21,49 +24,63 @@
   <script defer src="static/js/marked.min.js"></script>
   <script defer src="static/js/js-yaml.min.js"></script>
   <script defer src="static/js/tex-svg.js"></script>
-  <script defer src="static/js/scripts.js"></script>
+  <script defer src="static/js/site-content.js?v=bilingual-20261023"></script>
+  <script defer src="static/js/scripts.js?v=bilingual-20261023"></script>
 </head>
 <body id="page-top">
-  <a class="skip-link" href="#home">Skip to main content</a>
-  <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav" aria-label="Main navigation">
+  <a class="skip-link" href="#home" data-i18n="skip-label">Skip to main content</a>
+  <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav" aria-label="Main navigation" data-i18n-aria="navigation-label">
     <div class="container site-container">
-      <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top">Yang Li</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <span aria-hidden="true">☰</span></button>
+      <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top" data-i18n="page-top-title">Yang Li</a>
+      <div class="header-controls">
+        <div class="language-switch" role="group" aria-label="Select language" data-i18n-aria="language-label" hidden>
+          <button type="button" class="language-button is-active" data-lang="en" lang="en" aria-pressed="true" aria-label="Switch to English">EN</button>
+          <span class="language-separator" aria-hidden="true">/</span>
+          <button type="button" class="language-button" data-lang="zh" lang="zh-CN" aria-pressed="false" aria-label="切换为中文">中文</button>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" data-i18n-aria="menu-toggle-label"><span data-i18n="menu-label">Menu</span> <span aria-hidden="true">☰</span></button>
+      </div>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto my-3 my-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
-          <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
-          <li class="nav-item"><a class="nav-link" href="static/assets/docs/Yang_Li_CV.pdf" target="_blank" rel="noopener">CV [pdf]</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home" data-i18n="nav-home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications" data-i18n="nav-publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#background" data-i18n="nav-background">Background</a></li>
+          <li class="nav-item"><a class="nav-link" href="#internship" data-i18n="nav-internship">Internship</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards" data-i18n="nav-awards">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" href="static/assets/docs/Yang_Li_CV.pdf" target="_blank" rel="noopener" data-i18n="nav-cv">CV [pdf]</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <header class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
     <div class="top-section-content container site-container">
-      <h1 id="top-section-bg-text">Yang Li’s Homepage</h1>
-      <p class="hero-subtitle">Combinatorics · Shandong University</p>
+      <h1 id="top-section-bg-text" data-i18n="top-section-bg-text">Yang Li’s Homepage</h1>
+      <p class="hero-subtitle" data-i18n="hero-subtitle">Combinatorics · Shandong University</p>
     </div>
   </header>
   <div class="container site-container avatar-container">
-    <div id="avatar"><img src="static/assets/img/photo.png" alt="Portrait of Yang Li" width="480" height="640"></div>
+    <div id="avatar"><img src="static/assets/img/photo.png" alt="Portrait of Yang Li" data-i18n-alt="avatar-alt" width="480" height="640"></div>
   </div>
   <main>
     <section class="content-section bg-gradient-primary-to-secondary-light" id="home" aria-labelledby="home-subtitle">
       <div class="container site-container">
-        <header><h2 id="home-subtitle">Yang Li <span lang="zh">李杨</span></h2></header>
-        <div class="main-body" id="home-md"><p>I am a Ph.D. student in Mathematics at the <strong>Research Center for Mathematics and Interdisciplinary Sciences, Shandong University</strong>, advised by <strong>Zhicong Lin</strong>.</p>
+        <header><h2 id="home-subtitle" data-i18n="home-subtitle">Yang Li | 李杨</h2></header>
+        <div class="main-body" id="home-md">
+<!-- CONTENT:home:START -->
+<p>I am a Ph.D. student in Mathematics at the <strong>Research Center for Mathematics and Interdisciplinary Sciences, Shandong University</strong>, advised by <strong>Zhicong Lin</strong>.</p>
 <h3>Research Interests</h3>
 <p>My research interests include <strong>generating functions, combinatorial statistics, combinatorial bijections, permutations, and lattice paths</strong>, with a particular interest in <strong>tree structures</strong>.</p>
 <p class="contact-links"><a href="mailto:202421349@mail.sdu.edu.cn">202421349@mail.sdu.edu.cn</a><span class="contact-divider" aria-hidden="true">&middot;</span><a class="cv-link" href="static/assets/docs/Yang_Li_CV.pdf" target="_blank" rel="noopener">Curriculum vitae [pdf]</a></p>
-</div>
+<!-- CONTENT:home:END -->
+        </div>
       </div>
     </section>
     <section class="content-section bg-gradient-primary-to-secondary-gray" id="publications" aria-labelledby="publications-subtitle">
       <div class="container site-container">
-        <header><h2 id="publications-subtitle">Publications and Preprints</h2></header>
-        <div class="main-body" id="publications-md"><h3>Preprints and Manuscripts</h3>
+        <header><h2 id="publications-subtitle" data-i18n="publications-subtitle">Publications and Preprints</h2></header>
+        <div class="main-body" id="publications-md">
+<!-- CONTENT:publications:START -->
+<h3>Preprints and Manuscripts</h3>
 <ol>
 <li><p>W. Fang, <strong>Y. Li</strong>, and Z. Lin, <a href="https://arxiv.org/abs/2610.05665">Symmetries on vector parking functions via bounded lattice paths</a>, preprint, arXiv:2610.05665 (2026). <a class="pdf-link" href="papers/symmetries-vector-parking-functions.pdf" target="_blank" rel="noopener" aria-label="Open PDF: Symmetries on vector parking functions via bounded lattice paths" title="arXiv preprint supplied by the author">[pdf]</a></p>
 </li>
@@ -83,13 +100,16 @@
 <li><p><strong>Y. Li</strong> and Z. Lin, <a href="https://www.sciencedirect.com/science/article/pii/S0012365X23001127">A symmetry on parking functions via Dyck paths</a>, <em>Discrete Mathematics</em>, <strong>346</strong> (2023), Article 113426. <a class="pdf-link" href="papers/parking-functions-dyck-paths.pdf" target="_blank" rel="noopener" aria-label="Open PDF: A symmetry on parking functions via Dyck paths" title="Journal PDF supplied by the author">[pdf]</a></p>
 </li>
 </ol>
-</div>
+<!-- CONTENT:publications:END -->
+        </div>
       </div>
     </section>
     <section class="content-section bg-gradient-primary-to-secondary-light" id="background" aria-labelledby="background-subtitle">
       <div class="container site-container">
-        <header><h2 id="background-subtitle">Academic Background</h2></header>
-        <div class="main-body" id="background-md"><h3>Education</h3>
+        <header><h2 id="background-subtitle" data-i18n="background-subtitle">Academic Background</h2></header>
+        <div class="main-body" id="background-md">
+<!-- CONTENT:background:START -->
+<h3>Education</h3>
 <ul>
 <li><p><strong>Shandong University</strong>, Qingdao, Shandong<br>Ph.D. student in Mathematics, <strong>September 2024–present</strong><br>Advisor: <strong>Zhicong Lin</strong></p>
 </li>
@@ -108,26 +128,76 @@
 </ul>
 <h3>Skills and Languages</h3>
 <p><strong>Software:</strong> Java, Python, Maple, SQL, LaTeX.<br><strong>Languages:</strong> Chinese, English.</p>
-</div>
+<!-- CONTENT:background:END -->
+        </div>
       </div>
     </section>
-    <section class="content-section bg-gradient-primary-to-secondary-gray" id="awards" aria-labelledby="awards-subtitle">
+    <section class="content-section bg-gradient-primary-to-secondary-gray" id="internship" aria-labelledby="internship-subtitle">
       <div class="container site-container">
-        <header><h2 id="awards-subtitle">Honors and Awards</h2></header>
-        <div class="main-body" id="awards-md"><ul>
+        <header><h2 id="internship-subtitle" data-i18n="internship-subtitle">Internship Experience</h2></header>
+        <div class="main-body" id="internship-md">
+<!-- CONTENT:internship:START -->
+<article class="internship-entry" aria-labelledby="internship-company">
+  <div class="internship-heading">
+    <div>
+      <p class="experience-kicker">Industry experience</p>
+      <h3 id="internship-company">Huawei Technologies Co., Ltd.</h3>
+      <p class="internship-role">Software R&amp;D Engineer <span class="role-tag">Internship</span></p>
+    </div>
+    <p class="internship-dates"><time datetime="2023-06-28">June 28</time> – <time datetime="2023-08-25">August 25, 2023</time></p>
+  </div>
+  <div class="internship-gallery">
+    <figure class="internship-figure certificate-figure">
+      <a class="gallery-link certificate-link" href="static/assets/img/huawei-internship-certificate-redacted.png" data-lightbox data-caption="Internship certificate · ID number redacted" aria-label="Enlarge the internship certificate (ID number redacted)" target="_blank" rel="noopener">
+        <div class="gallery-frame"><img src="static/assets/img/huawei-internship-certificate-redacted.png" alt="Huawei internship certificate for Yang Li, June 28–August 25, 2023; ID number redacted" width="1026" height="1348" loading="lazy" decoding="async"></div>
+        <span class="image-expand" aria-hidden="true">↗</span>
+      </a>
+      <figcaption><strong>Internship certificate</strong><span class="figure-note">ID number redacted for privacy · Click to enlarge</span></figcaption>
+    </figure>
+    <figure class="internship-figure campus-figure">
+      <a class="gallery-link" href="static/assets/img/huawei-campus.jpg" data-lightbox data-caption="Huawei campus at night" aria-label="Enlarge the photograph of the Huawei campus at night" target="_blank" rel="noopener">
+        <div class="gallery-frame"><img src="static/assets/img/huawei-campus.jpg" alt="A nighttime photograph of a Huawei campus" width="2048" height="1536" loading="lazy" decoding="async"></div>
+        <span class="image-expand" aria-hidden="true">↗</span>
+      </a>
+      <figcaption><strong>Huawei campus at night</strong><span class="figure-note">Click to enlarge</span></figcaption>
+    </figure>
+  </div>
+</article>
+<!-- CONTENT:internship:END -->
+        </div>
+      </div>
+    </section>
+    <section class="content-section bg-gradient-primary-to-secondary-light" id="awards" aria-labelledby="awards-subtitle">
+      <div class="container site-container">
+        <header><h2 id="awards-subtitle" data-i18n="awards-subtitle">Honors and Awards</h2></header>
+        <div class="main-body" id="awards-md">
+<!-- CONTENT:awards:START -->
+<ul>
 <li><strong>First-Class Academic Scholarship</strong>, Shandong University, 2026, 2025, and 2022.</li>
 <li><strong>Outstanding Graduate</strong>, Shandong University, 2024.</li>
 <li><strong>Chinese National Scholarship for Graduate Students</strong>, 2023.</li>
 </ul>
-</div>
+<!-- CONTENT:awards:END -->
+        </div>
       </div>
     </section>
   </main>
   <footer class="bg-bottom text-center">
     <div class="container site-container">
-      <p id="copyright-text">© Yang Li 2026.</p>
-      <p class="footer-links"><a href="https://github.com/tuotuozhanshi" target="_blank" rel="noopener">GitHub</a><span aria-hidden="true"> · </span><a href="LICENSE">Template license</a></p>
+      <p id="copyright-text" data-i18n="copyright-text">© Yang Li 2026.</p>
+      <p class="footer-links"><a href="https://github.com/tuotuozhanshi" target="_blank" rel="noopener">GitHub</a><span aria-hidden="true"> · </span><a href="LICENSE" data-i18n="license-label">Template license</a></p>
     </div>
   </footer>
+  <dialog id="image-lightbox" class="image-lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-toolbar">
+      <p data-i18n="image-preview-label">Image preview</p>
+      <button class="lightbox-close" type="button" aria-label="Close" data-i18n-aria="close-label"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="lightbox-media"><img id="lightbox-image" alt=""></div>
+    <div class="lightbox-footer">
+      <p id="lightbox-caption"></p>
+      <a id="lightbox-original" target="_blank" rel="noopener" data-i18n="open-image-label">Open full image</a>
+    </div>
+  </dialog>
 </body>
 </html>
